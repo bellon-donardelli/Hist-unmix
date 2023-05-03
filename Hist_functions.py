@@ -204,7 +204,7 @@ def moving_mean(x,group_size=30):
 
 def GGCD_1C(u,theta,alfa,beta,I,x):
 
-        '''
+    '''
     Computes modified Gamma-Cauchy exponential model for a single ferromagnetic component
 
     Parameters: 
@@ -3006,7 +3006,7 @@ def Levenberg_Marquardt_3C(function,u1,theta1,alfa1,beta1,I1,u2,theta2,alfa2,bet
 
 
 def high_field(lamb,phi,x):
-        '''
+    '''
     Computes a modified high-field saturation approach (susceptibility).
 
     Parameters:
