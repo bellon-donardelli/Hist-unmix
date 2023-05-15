@@ -10,8 +10,8 @@ authors:
   - family-names: "Williams"
     given-names: "Wyn"
     orcid: "https://orcid.org/0000-0001-9210-7574"
-title: bellon-donardelli/Hist-unmix: Hist-unmin_v1.0.0 
-version: 2023/01
+title: "bellon-donardelli/Hist-unmix: Hist-unmin_v1.0.0"
+version: 1.0
 date-released: 2023-05-15
 doi: 10.5281/zenodo.7938214
 url: "https://github.com/bellon-donardelli/Hist-unmix.git"
