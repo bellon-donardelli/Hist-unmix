@@ -1,6 +1,6 @@
 # Hist-unmix
 
-Hist-unmix is an open-sourced package, in python language (ipynb-file), to separate susceptibility components of distorted hysteresis curves through a phenomenological model. The Hist-unmix package allows the user to adjust a forward model of up to three ferromagnetic components and a dia/paramagnetic contribution. Optimization of all of the parameters is achieved through least squares fit (Levenberg-Marquardt method) providing an uncertainty for the inverted parameters through a Monte Carlo error propagation. For each ferromagnetic component, it is possible to calculate magnetization saturation (Ms), magnetization saturation of remanence (Mrs) and the mean coercivity (u). 
+Hist-unmix is an open-sourced package, in python language (ipynb-file), to separate susceptibility components of distorted hysteresis curves through a phenomenological model. The Hist-unmix package allows the user to adjust a forward model of up to three ferromagnetic components and a dia/paramagnetic contribution. Optimization of all of the parameters is achieved through least squares fit (Levenberg-Marquardt method) providing an uncertainty for the inverted parameters through a Monte Carlo error propagation. For each ferromagnetic component, it is possible to calculate magnetization saturation (Ms), magnetization saturation of remanence (Mrs) and the mean coercivity (Bc). 
 
 Here is a quick tutorial to install the required libraries to run Hist-unmix.
 
