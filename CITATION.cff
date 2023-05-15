@@ -2,7 +2,7 @@ Hist-unmix: 1.0.0
 message: "If you use this software, please cite it as below."
 authors:
   - family-names: Bellon; Trindade; Williams 
-    given-names: UD;RIF;W
+    given-names: U.D.;R.I.F.;W.
     orcid: https://orcid.org/0000-0002-4599-6548;https://orcid.org/0000-0001-9848-9550;https://orcid.org/0000-0001-9848-9550
 title: bellon-donardelli/Hist-unmix: Hist-unmin_v1.0.0 
 version: 2023/01
