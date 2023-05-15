@@ -22,3 +22,5 @@ Here is a quick tutorial to install the required libraries to run Hist-unmix.
 	7. The environment is set to run your models!
 
 PS: Always make sure to have your csv-data file within the same folder where Hist-unmix is.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bellon-donardelli/Hist-unmix.git/master?urlpath=Code%2FHist-unmix.ipynb)
