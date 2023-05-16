@@ -42,4 +42,3 @@ Here is a quick tutorial to install the required libraries to run Hist-unmix.
 
 PS: Always make sure to have your csv-data file within the same folder where Hist-unmix is.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bellon-donardelli/Hist-unmix.git/HEAD?labpath=Hist-unmix.ipynb)
