@@ -44,3 +44,4 @@ Here is a quick tutorial to install the required libraries to run Hist-unmix.
 
 PS: Always make sure to have your csv-data file within the same folder where Hist-unmix is.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7941088.svg)](https://doi.org/10.5281/zenodo.7941088)
