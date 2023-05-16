@@ -8,7 +8,9 @@ Here is a quick tutorial to install the required libraries to run Hist-unmix.
 
 	2. Put these files together in a folder of your preference.
 
-	3. Hist-unmix is, essentially, an ipynb-file. So Jupyter Notebook is mandatory! Go ahead to https://www.anaconda.com/ and download and execute the ANACONDA graphical installer (depending on your operating system). If you already have ANACONDA installed in your machine, skip this step.
+	3. Hist-unmix is, essentially, an ipynb-file. So Jupyter Notebook is mandatory! Go ahead to https://www.anaconda.com/ 
+	and download and execute the ANACONDA graphical installer (depending on your operating system). 
+	If you already have ANACONDA installed in your machine, skip this step.
 
 	4. Now, there are two options to install the libraries.
 
