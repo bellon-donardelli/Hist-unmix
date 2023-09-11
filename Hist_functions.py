@@ -606,11 +606,11 @@ def Levenberg_Marquardt_1C(function,u1,theta1,alfa1,beta1,I1,x,data,constrain,sa
 
     
     yt=function(p_0[0],p_0[1],p_0[2],p_0[3],p_0[4],x)
-    df=pd.DataFrame(data={'u1':np.round(p_0[0],4),
-                      'theta1':np.round(p_0[1],4),
-                      'alfa1':np.round(p_0[2],4),
-                      'beta1':np.round(p_0[3],4),
-                      'I1':np.round(p_0[4],4)},index=[0])
+    df=pd.DataFrame(data={'Bc1':p_0[0],
+                      'theta1':np.round(p_0[1],5),
+                      'alfa1':np.round(p_0[2],5),
+                      'beta1':np.round(p_0[3],5),
+                      'I1':p_0[4]},index=[0])
 
     df1=pd.DataFrame(data={'x1':x,
               'Ca':yt,
@@ -1528,16 +1528,16 @@ def Levenberg_Marquardt_2C(function,u1,theta1,alfa1,beta1,I1,u2,theta2,alfa2,bet
     yt=function(p_0[0],p_0[1],p_0[2],p_0[3],p_0[4],p_0[5],p_0[6],p_0[7],p_0[8],p_0[9],x)
     Ca=function(p_0[0],p_0[1],p_0[2],p_0[3],p_0[4],p_0[5],p_0[6],p_0[7],p_0[8],0,x)
     Cb=function(p_0[0],p_0[1],p_0[2],p_0[3],0,p_0[5],p_0[6],p_0[7],p_0[8],p_0[9],x)
-    df=pd.DataFrame(data={'u1':np.round(p_0[0],0),
-                      'theta1':np.round(p_0[1],1),
-                      'alfa1':np.round(p_0[2],2),
-                      'beta1':np.round(p_0[3],3),
-                      'I1':np.round(p_0[4],4),
-                      'u2':np.round(p_0[5],5),
-                      'theta2':np.round(p_0[6],6),
-                      'alfa2':np.round(p_0[7],7),
-                      'beta2':np.round(p_0[8],8),
-                      'I2':np.round(p_0[9],9)},index=[0])
+    df=pd.DataFrame(data={'Bc1':p_0[0],
+                      'theta1':np.round(p_0[1],5),
+                      'alfa1':np.round(p_0[2],5),
+                      'beta1':np.round(p_0[3],5),
+                      'I1':p_0[4],
+                      'Bc2':p_0[5],
+                      'theta2':np.round(p_0[6],5),
+                      'alfa2':np.round(p_0[7],5),
+                      'beta2':np.round(p_0[8],5),
+                      'I2':p_0[9]},index=[0])
 
     df1=pd.DataFrame(data={'x1':x,
               'Ca+Cb':yt,
@@ -2974,21 +2974,21 @@ def Levenberg_Marquardt_3C(function,u1,theta1,alfa1,beta1,I1,u2,theta2,alfa2,bet
     Ca=function(p_0[0],p_0[1],p_0[2],p_0[3],p_0[4],p_0[5],p_0[6],p_0[7],p_0[8],0,p_0[10],p_0[11],p_0[12],p_0[13],0,x)
     Cb=function(p_0[0],p_0[1],p_0[2],p_0[3],0,p_0[5],p_0[6],p_0[7],p_0[8],p_0[9],p_0[10],p_0[11],p_0[12],p_0[13],0,x)
     Cc=function(p_0[0],p_0[1],p_0[2],p_0[3],0,p_0[5],p_0[6],p_0[7],p_0[8],0,p_0[10],p_0[11],p_0[12],p_0[13],p_0[14],x)
-    df=pd.DataFrame(data={'u1':np.round(p_0[0],4),
-                      'theta1':np.round(p_0[1],4),
-                      'alfa1':np.round(p_0[2],4),
-                      'beta1':np.round(p_0[3],4),
-                      'I1':np.round(p_0[4],4),
-                      'u2':np.round(p_0[5],4),
-                      'theta2':np.round(p_0[6],4),
-                      'alfa2':np.round(p_0[7],4),
-                      'beta2':np.round(p_0[8],4),
-                      'I2':np.round(p_0[9],4),
-                      'u3':np.round(p_0[10],4),
-                      'theta3':np.round(p_0[11],4),
-                      'alfa3':np.round(p_0[12],4),
-                      'beta3':np.round(p_0[13],4),
-                      'I3':np.round(p_0[14],4)},index=[0])
+    df=pd.DataFrame(data={'Bc1':p_0[0],
+                      'theta1':np.round(p_0[1],5),
+                      'alfa1':np.round(p_0[2],5),
+                      'beta1':np.round(p_0[3],5),
+                      'I1':p_0[4],
+                      'Bc2':p_0[5],
+                      'theta2':np.round(p_0[6],5),
+                      'alfa2':np.round(p_0[7],5),
+                      'beta2':np.round(p_0[8],5),
+                      'I2':p_0[9],
+                      'Bc3':p_0[10],
+                      'theta3':np.round(p_0[11],5),
+                      'alfa3':np.round(p_0[12],5),
+                      'beta3':np.round(p_0[13],5),
+                      'I3':p_0[14]},index=[0])
 
     df1=pd.DataFrame(data={'x1':x,
               'Ca+Cb+Cc':yt,
@@ -3181,3 +3181,23 @@ def R2_calc(y,yc):
     R2=1-(SQR/SQT)
     
     return R2
+
+
+
+def chi_squared(observed,calculated,parameter):
+
+    '''
+    Calculates the chi-squared value of an inverted model in comparison with the real data. 
+
+    Parameters:
+        observed: 1D-array of the observed data (float);
+        calculated: 1D-array of an inverted model (float);
+
+    returns:
+        chi: the reduced chi-squared statistic of the final inverted model (float)
+
+    '''
+
+    chi=np.sum((observed-calculated)**2)/(np.size(observed)-np.size(parameter))
+    
+    return chi

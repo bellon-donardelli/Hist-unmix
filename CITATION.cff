@@ -1,4 +1,4 @@
-Hist-unmix: 1.0.0
+Hist-unmix: 1.0.2
 message: "If you use this software, please cite it as below."
 authors:
   - family-names: "Bellon"
@@ -14,4 +14,5 @@ title: "bellon-donardelli/Hist-unmix: Hist-unmin_v1.0.0"
 version: 1.0
 date-released: 2023-05-15
 doi: https://doi.org/10.5281/zenodo.7941088
+publication: 10.1029/2023GC011048
 url: "https://github.com/bellon-donardelli/Hist-unmix.git"
